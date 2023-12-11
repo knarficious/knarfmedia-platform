@@ -240,7 +240,7 @@ export const Form: FunctionComponent<Props> = ({ publication }) => {
               <div className="text-gray-700 block text-sm font-bold">tags</div>
               <FieldArray
                 name="tags"
-                render={(arrayHelpers) => (
+                render={(arrayHelpers: any) => (
                   <div className="mb-2" id="publication_tags">
                     {values.tags && values.tags.length > 0 ? (
                       values.tags.map((item: any, index: number) => (
