@@ -6,7 +6,7 @@ import {
   getUsers,
   getUsersPath,
 } from "../../../components/user/PageList";
-import { PagedCollection } from "../../../types/collection";
+import { PagedCollection } from "../../../types/Collection";
 import { User } from "../../../types/User";
 import { fetch, getCollectionPaths } from "../../../utils/dataAccess";
 

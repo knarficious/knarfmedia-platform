@@ -10,7 +10,7 @@ import { useRouter } from "next/router";
 import { dehydrate, QueryClient, useQuery } from "react-query";
 
 import { Form } from "../../../components/user/Form";
-import { PagedCollection } from "../../../types/collection";
+import { PagedCollection } from "../../../types/Collection";
 import { User } from "../../../types/User";
 import { fetch, FetchResponse, getItemPaths } from "../../../utils/dataAccess";
 

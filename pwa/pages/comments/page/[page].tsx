@@ -6,7 +6,7 @@ import {
   getComments,
   getCommentsPath,
 } from "../../../components/comment/PageList";
-import { PagedCollection } from "../../../types/collection";
+import { PagedCollection } from "../../../types/Collection";
 import { Comment } from "../../../types/Comment";
 import { fetch, getCollectionPaths } from "../../../utils/dataAccess";
 

@@ -6,7 +6,7 @@ import {
   getPublications,
   getPublicationsPath,
 } from "../../../components/publication/PageList";
-import { PagedCollection } from "../../../types/collection";
+import { PagedCollection } from "../../../types/Collection";
 import { Publication } from "../../../types/Publication";
 import { fetch, getCollectionPaths } from "../../../utils/dataAccess";
 
