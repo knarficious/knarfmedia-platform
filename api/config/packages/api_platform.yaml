@@ -1,6 +1,7 @@
 api_platform:
-    title: Hello API Platform
+    title: Knarf Media API
     version: 1.0.0
+    show_webby: false
     # Mercure integration, remove if unwanted
     mercure: ~
     # Good defaults for REST APIs
@@ -9,4 +10,17 @@ api_platform:
         cache_headers:
             vary: ['Content-Type', 'Authorization', 'Origin']
         extra_properties:
-            standard_put: true
+            standard_put: true            
+    swagger:
+         api_keys:
+             JWT:
+                name: Authorization
+                type: header
+    patch_formats:
+        multipart: ['multipart/form-data']        
+        json:     ['application/merge-patch+json']
+        
+    eager_loading:
+        max_joins: 100
+        fetch_partial: true
+        force_eager: false

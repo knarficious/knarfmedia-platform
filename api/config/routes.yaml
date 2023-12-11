@@ -1,3 +1,11 @@
+auth:
+    path: /auth
+    methods: ['POST']
+api_token_invalidate:
+    path: /token/invalidate
+app_verify_email:
+    path: /verify
+    methods: ['GET']
 controllers:
     resource:
         path: ../src/Controller/
