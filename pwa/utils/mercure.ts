@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { PagedCollection, isPagedCollection } from "../types/collection";
+import { PagedCollection, isPagedCollection } from "../types/Collection";
 import { Item, isItem } from "../types/item";
 
 const mercureSubscribe = <T extends Item | PagedCollection<Item> | undefined>(
