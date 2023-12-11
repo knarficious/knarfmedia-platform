@@ -86,14 +86,7 @@ export const Show: FunctionComponent<Props> = ({ publication, text }) => {
           </tr>
           <tr>
             <th scope="row">tags</th>
-            <td>
-              <ReferenceLinks
-                items={publication["tags"].map((ref: any) => ({
-                  href: getItemPath(ref, "/tags/[id]"),
-                  name: ref,
-                }))}
-              />
-            </td>
+
           </tr>
           <tr>
             <th scope="row">filePath</th>
@@ -109,14 +102,7 @@ export const Show: FunctionComponent<Props> = ({ publication, text }) => {
           </tr>
           <tr>
             <th scope="row">comments</th>
-            <td>
-              <ReferenceLinks
-                items={publication["comments"].map((ref: any) => ({
-                  href: getItemPath(ref, "/comments/[id]"),
-                  name: ref,
-                }))}
-              />
-            </td>
+
           </tr>
         </tbody>
       </table>
