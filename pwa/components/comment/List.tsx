@@ -54,10 +54,10 @@ export const List: FunctionComponent<Props> = ({ comments }) => (
                     <ReferenceLinks
                       items={{
                         href: getItemPath(
-                          comment["post"],
+                          comment["post"]["@id"],
                           "/publications/[id]"
                         ),
-                        name: comment["post"],
+                        name: comment["post"]["@id"],
                       }}
                     />
                   </td>

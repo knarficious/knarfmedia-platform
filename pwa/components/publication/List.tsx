@@ -73,7 +73,7 @@ export const List: FunctionComponent<Props> = ({ publications }) => (
                   </td>
                   <td>
                     <ReferenceLinks
-                      items={publication["tags"].map((ref: any) => ({
+                      items={publication["tags"]?[].map((ref: any) => ({
                         href: getItemPath(ref, "/tags/[id]"),
                         name: ref,
                       }))}
@@ -84,7 +84,7 @@ export const List: FunctionComponent<Props> = ({ publications }) => (
                   <td>{publication["updatedAt"]?.toLocaleString()}</td>
                   <td>
                     <ReferenceLinks
-                      items={publication["comments"].map((ref: any) => ({
+                      items={publication["comments"]?[].map((ref: any) => ({
                         href: getItemPath(ref, "/comments/[id]"),
                         name: ref,
                       }))}

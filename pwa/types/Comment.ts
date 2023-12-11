@@ -6,9 +6,9 @@ export class Comment implements Item {
   constructor(
     _id?: string,
     public content?: string,
-    public post?: string,
+    public post?: any,
     public publishedAt?: Date,
-    public author?: string
+    public author?: any
   ) {
     this["@id"] = _id;
   }
