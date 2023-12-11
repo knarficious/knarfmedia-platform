@@ -1,6 +1,6 @@
 import isomorphicFetch from "isomorphic-unfetch";
 
-import { PagedCollection } from "../types/collection";
+import { PagedCollection } from "../types/Collection";
 import { Item } from "../types/item";
 import { ENTRYPOINT } from "../config/entrypoint";
 
