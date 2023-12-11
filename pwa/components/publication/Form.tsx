@@ -364,7 +364,7 @@ export const Form: FunctionComponent<Props> = ({ publication }) => {
               </div>
               <FieldArray
                 name="comments"
-                render={(arrayHelpers) => (
+                render={(arrayHelpers: any) => (
                   <div className="mb-2" id="publication_comments">
                     {values.comments && values.comments.length > 0 ? (
                       values.comments.map((item: any, index: number) => (
