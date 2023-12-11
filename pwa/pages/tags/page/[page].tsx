@@ -6,7 +6,7 @@ import {
   getTags,
   getTagsPath,
 } from "../../../components/tag/PageList";
-import { PagedCollection } from "../../../types/collection";
+import { PagedCollection } from "../../../types/Collection";
 import { Tag } from "../../../types/Tag";
 import { fetch, getCollectionPaths } from "../../../utils/dataAccess";
 
