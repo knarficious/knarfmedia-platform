@@ -5,7 +5,7 @@ import { useQuery } from "react-query";
 
 import Pagination from "../common/Pagination";
 import { List } from "./List";
-import { PagedCollection } from "../../types/collection";
+import { PagedCollection } from "../../types/Collection";
 import { Comment } from "../../types/Comment";
 import { fetch, FetchResponse, parsePage } from "../../utils/dataAccess";
 import { useMercure } from "../../utils/mercure";
